@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+
+
+<head>
+
+<title>Git show </title>
+
+<meta charset="UTF-8">
+
+<link href="css/commandes.css" rel="stylesheet" type"text/css">
+
+</head>
+
+
+
+<body>
+
+<div id="titre"> 
+
+<h1> <a href="../index.html"> <img src="./images/logo.png" alt="logo" > </img> </a> <br>Le fantastique guide de Git</h1>
+
+</div>
+
+<div id="nav">
+
+<nav>
+
+<ul>
+
+<li class="nolastmen"><a href="../index.html">Accueil</a></li>
+
+<li><a href="../commandes.html">Commandes Git</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+<div id="corps">
+
+<h3 id="titreCommande">Git show </h3>
+
+
+
+<section class="descriptif">
+
+<p>Il s'agit de la commande qui permet de visualiser un ou plusieurs objets </p>
+
+
+
+</section>
+
+
+
+<section class="affichage">
+
+<h4>Syntaxe</h4>
+
+<div class="code"><code>git show </code></div>
+
+<h4> Affichage </h4>
+
+<div class="code"><code>
+
+commit 7b9e0a9377ac070450c854ca0211fa4f8b39c45e <br>
+
+Merge: b8bd625 f4c193a <br>
+
+Author: Utilisateur user@lubuntu-13.04 <br>
+
+Date: Thu Mar 12 09:36:58 2015 +0100 <br>
+
+
+
+Merge avec in202-uvsq/git-manual <br>
+
+</code></div> 
+
+</section> 
+
+
+
+<h3>Git show < commit > </h3>
+
+
+
+<section class="descriptif">
+
+<p>Il s'agit de la commande qui permet de visualiser un commit en particulier </p>
+
+
+
+</section>
+
+
+
+<section class="affichage">
+
+<h4>Syntaxe</h4>
+
+<div class="code"><code>git show < commit > </code></div>
+
+<h4> Affichage </h4>
+
+<div class="code"><code>
+
+Author: Moumzy <thibault_100@hotmail.fr> <br>
+
+Date: Thu Mar 12 09:36:58 2015 +0100 <br>
+
+
+
+
+
+commit 7b9e0a9377ac070450c854ca0211fa4f8b39c45e <br>
+
+Merge: b8bd625 f4c193a <br>
+
+Author: Utilisateur user@lubuntu-13.04 <br>
+
+Date: Thu Mar 12 09:36:58 2015 +0100 <br>
+
+
+
+X files modified, X suppressions, X deletions
+
+</code></div>
+
+</section> 
+
+
+
+<h3>Git show <branche> : < fichier > </h3>
+
+
+
+<section class="descriptif">
+
+<p>Il s'agit de la commande qui permet de visualiser un document en particulier en précisant la branche ou il se situe. </p>
+
+
+
+</section>
+
+
+
+<section class="affichage">
+
+<h4>Syntaxe</h4>
+
+<div class="code"><code>git show < branche > : < fichier > </code></div>
+
+<h4> Affichage </h4>
+
+<div class="code"><code>
+
+Author: Moumzy <thibault_100@hotmail.fr> <br>
+
+Date: Thu Mar 12 09:49:52 2015 +0100 <br>
+
+"description du terminal" <br>
+
+"description du terminal" <br>
+
+"description du terminal" <br>
+
+"description du terminal" <br>
+
+"description du terminal" <br>
+
+texte modifié dans le head <br>
+
+"description du terminal" <br>
+
+"description du terminal" <br>
+
+</code></div>
+
+</section> 
+
+<h3>Git show --stat</h3>
+
+
+
+<section class="descriptif">
+
+<p>Il s'agit de la commande qui donne le nombre d'insertions et de déletions apportées sur le dernier commit en date</p>
+
+
+
+</section>
+
+
+
+<section class="affichage">
+
+<h4>Syntaxe</h4>
+
+<div class="code"><code>git show --stat</code></div>
+
+<h4> Affichage </h4>
+
+<div class="code"><code>
+
+commit bb95b4158ec0c843d5d67b1c3c0f76511f88b396 <br>
+
+Author: SuzanneAir <suzanneair@live.fr> <br>
+
+Date: Fri Mar 6 12:50:25 2015 +0100 <br>
+
+
+
+modifications squelette
+
+
+
+squelette.html | 22 +++++++++++++--------- <br>
+
+1 file changed, 13 insertions(+), 9 deletions(-) <br>
+
+</code></div>
+
+</section>
+
+<h3>Git show --pretty</h3>
+
+
+
+<section class="descriptif">
+
+<p>Il s'agit de la commande qui donne le format du document et les dernières modifications apportées</p>
+
+
+
+</section>
+
+
+
+<section class="affichage">
+
+<h4>Syntaxe</h4>
+
+<div class="code"><code>git show --pretty</code></div>
+
+<h4> Affichage </h4>
+
+<div class="code"><code>
+
+Author: SuzanneAir <suzanneair@live.fr> <br>
+
+Date: Fri Mar 6 12:20:19 2015 +0100 <br>
+
+
+
+nom de la commande 
+
+
+
+diff --git a/squelette.html b/squelette.html <br>
+
+index 9bb98c3..ee9b64c 100644 <br>
+
+--- a/squelette.html <br>
+
++++ b/squelette.html <br>
+
+@@ -1,6 +1,6 @@ <br>
+
+texte modifié dans le head <br>
+
+@@ -9,7 +9,7 @@ <br>
+
+texte modifié dans le premier titre h1 <br>
+
+</code></div>
+
+</section> 
+
+</div>
+
+<footer> 
+
+<p>© Groupe d'IN202 2014-2015 UVSQ - Article par Suzanne & Thibault </p>
+
+</footer>
+
+
+
+</body>
+
+</html>
